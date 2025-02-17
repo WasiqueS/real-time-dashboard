@@ -7,7 +7,7 @@ app = FastAPI()
 # Allow CORS for Dash frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://covid-dashboard.com"],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
